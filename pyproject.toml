@@ -1,0 +1,19 @@
+[project]
+name = "protocols"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Ramon Meza", email = "ramon_meza@live.com"},
+]
+dependencies = []
+requires-python = "==3.13.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.scripts]
+server = "python src/server.py"
+client = "python src/client.py"
